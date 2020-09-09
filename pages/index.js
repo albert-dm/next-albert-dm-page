@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import Rectangle from './components/rectangle'
 import styled, { createGlobalStyle } from 'styled-components';
 const GlobalStyle = createGlobalStyle`
  h1 {
@@ -14,10 +15,8 @@ export default function Home() {
       <Head>
         <title>SSR styled-components with Next.js Starter</title>
       </Head>
-      <Container>
-        <GlobalStyle />
-        <h1>Hello, world!</h1>
-      </Container>
+        
+        <Rectangle/>
     </>
   );
 }
