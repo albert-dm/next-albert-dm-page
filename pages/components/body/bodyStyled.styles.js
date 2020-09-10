@@ -10,6 +10,7 @@ export const BodyStyled = styled.div`
     height:auto;
     margin:auto;
     margin-bottom:50px;
+    margin-top:50px;
     .profilePhoto {
       display: block;
       margin: auto;
