@@ -5,7 +5,10 @@ import { CardContainer } from "./cardContainer.styles";
 const SkillsContainer = (props) => {
   return (
     <CardContainer>
-      <div class="cards">
+      <div className="title">
+        CLIENTS
+      </div>
+      <div className="cards">
       {props.skills.map((skill) => (
         <SkillsCard skill={skill} />
       ))}

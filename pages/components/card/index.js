@@ -2,14 +2,11 @@ import React from "react";
 import { CardContainer } from "./card.styles";
 
 const SkillsList = (props) => {
-  return (
-    <div>
-      {props.skills.map((skill) => (
+  return (props.skills.map((skill) => (
         <div className="item" key={skill}>
           {skill}
         </div>
-      ))}
-    </div>
+      ))
   );
 };
 
