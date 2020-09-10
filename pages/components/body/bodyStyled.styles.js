@@ -1,29 +1,31 @@
 import styled from 'styled-components';
-import { colors } from '../../theme'
 
-export const HeaderStyled = styled.div`
+export const BodyStyled = styled.div`
     @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+    @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap");
     display:flex;
     flex-direction:row;
     justify-content:space-between;
-    width:80%;
-    height:60vh;
+    width:70%;
+    height:auto;
     margin:auto;
+    margin-bottom:50px;
     .profilePhoto {
       display: block;
       margin: auto;
       border-radius:50%;
-      max-height:90%;
+      max-height:50%;
       width: auto;
       height: auto;
     }
     .profileText{
-      background-color:pink;
       flex-direction:column;
       margin:50px;
+      width:40%;
     }
     .profileText h1{
-      font-family: 'Coda';
+      font-family: 'Rubik';
+      font-weight:900;
     }
     .description {
       font-family: 'Roboto', sans-serif;
@@ -38,5 +40,11 @@ export const HeaderStyled = styled.div`
       font-weight: bold;
       font-size: 14px;
       line-height: 16px;
+    }
+    .socialButtons {
+      margin-top:50px;
+      display:flex;
+      flex-direction:row;
+      justify-content:space-around;
     }
   `;

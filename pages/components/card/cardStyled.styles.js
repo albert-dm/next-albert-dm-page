@@ -1,6 +1,7 @@
 import styled from "styled-components";
+import { colors } from '../../theme'
 
-export const CardContainer = styled.div `
+export const CardStyled = styled.div `
   @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap");
 
   display: flex;
@@ -9,19 +10,17 @@ export const CardContainer = styled.div `
   font-family: "Rubik", sans-serif;
   align-items: center;
   text-align: center;
-
+  
   .content {
     width: 40vh;
     height: 40vh;
     border-style: solid;
-    border-color: #3f3db9;
-    border-width: 0.1px;
-    border-radius: 5px;
-    box-shadow: 5px 5px 5px black;
+    border-color: ${colors.secondary};
+    border-width: 2px;
+    border-radius: 20px;
     display: flex;
     flex-direction: column;
     background-color: white;
-    margin:30px;
   }
   .name {
     width: 100%;
@@ -29,10 +28,13 @@ export const CardContainer = styled.div `
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #3f3db9;
+    background-color: ${colors.secondary};
+    border-color: ${colors.secondary};
     font-size:20px;
     color:white;
-  cursor: pointer;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    cursor: pointer;
   }
   .description {
     display: flex;
@@ -41,7 +43,9 @@ export const CardContainer = styled.div `
     height:100%;
     font-size: 16px;
     font-family: "Rubik", sans-serif;
-  cursor: pointer;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    cursor: pointer;
   }
   .description:hover{
     background-color: #cccccc;

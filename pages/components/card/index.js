@@ -1,26 +1,26 @@
 import React from "react";
-import { CardContainer } from "./card.styles";
+import { CardStyled } from "./cardStyled.styles";
 
-const SkillsList = (props) => {
-  return (props.skills.map((skill) => (
-        <div className="item" key={skill}>
-          {skill}
+const CardList = (props) => {
+  return (props.items.map((item) => (
+        <div className="item" key={item}>
+          {item}
         </div>
       ))
   );
 };
 
-const SkillsCard = (props) => {
+const Card = (props) => {
   return (
-    <CardContainer>
+    <CardStyled>
       <div className="content">
-        <div className="name">{props.skill.name}</div>
+        <div className="name">{props.client.name}</div>
         <div className="description">
-          <SkillsList skills={props.skill.skills} />
+          <CardList items={props.client.items} />
         </div>
       </div>
-    </CardContainer>
+    </CardStyled>
   );
 };
 
-export default SkillsCard;
+export default Card;

@@ -1,14 +1,14 @@
 
 import React from 'react'
-import SkillsContainer from './components/cardContainer'
-import Header from './components/header'
-import skills from './api/skillsList'
+import CardContainer from './components/cardContainer'
+import Body from './components/body'
+import clients from './api/clientsList'
 
 const App = () => {
     return (
         <div>
-            <Header/>
-            <SkillsContainer skills={skills}/>
+            <Body/>
+            <CardContainer clients={clients}/>
         </div>
     )
 }

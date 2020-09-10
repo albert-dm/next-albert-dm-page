@@ -1,20 +1,20 @@
 import React from "react";
-import SkillsCard from "../card";
-import { CardContainer } from "./cardContainer.styles";
+import Card from "../card";
+import { CardContainerStyled } from "./cardContainerStyled.styles";
 
-const SkillsContainer = (props) => {
+const CardContainer = (props) => {
   return (
-    <CardContainer>
+    <CardContainerStyled>
       <div className="title">
-        CLIENTS
+        {'>'}CLIENTS
       </div>
       <div className="cards">
-      {props.skills.map((skill) => (
-        <SkillsCard skill={skill} />
+      {props.clients.map((client) => (
+        <Card client={client} />
       ))}
       </div>
-    </CardContainer>
+    </CardContainerStyled>
   );
 };
 
-export default SkillsContainer;
+export default CardContainer;
