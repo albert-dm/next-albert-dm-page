@@ -16,8 +16,7 @@ export const CardStyled = styled.div `
     height: 40vh;
     border-style: solid;
     border-color: ${colors.secondary};
-    border-width: 2px;
-    border-radius: 20px;
+    border-width: 4px;
     display: flex;
     flex-direction: column;
     background-color: white;
@@ -32,8 +31,6 @@ export const CardStyled = styled.div `
     border-color: ${colors.secondary};
     font-size:20px;
     color:white;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
     cursor: pointer;
   }
   .description {
@@ -43,8 +40,6 @@ export const CardStyled = styled.div `
     height:100%;
     font-size: 16px;
     font-family: "Rubik", sans-serif;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
     cursor: pointer;
   }
   .description:hover{
