@@ -10,7 +10,7 @@ const CardContainer = (props) => {
       </div>
       <div className="cards">
       {props.clients.map((client) => (
-        <Card client={client} />
+        <Card client={client} key={client.name} />
       ))}
       </div>
     </CardContainerStyled>
