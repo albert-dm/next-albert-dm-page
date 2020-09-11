@@ -18,6 +18,7 @@ export const CardStyled = styled.div `
     border-color: ${colors.secondary};
     border-width: 4px;
     display: flex;
+    border-radius:20px;
     flex-direction: column;
     background-color: white;
   }
@@ -29,6 +30,8 @@ export const CardStyled = styled.div `
     align-items: center;
     background-color: ${colors.secondary};
     border-color: ${colors.secondary};
+    border-top-left-radius:14px;
+    border-top-right-radius:14px;
     font-size:20px;
     color:white;
     cursor: pointer;

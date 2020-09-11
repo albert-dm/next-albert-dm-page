@@ -6,7 +6,7 @@ export const CardContainerStyled = styled.div`
 
     background-color:${colors.terminal};
     border-radius:10px;
-    width: 80%;
+    width: 100%;
     margin:auto;
     .title {
       color:${colors.white};
