@@ -4,7 +4,7 @@ import  Linkedin from '../icons/linkedin';
 import  Github from '../icons/github';
 import  Email from '../icons/email';
 
-const Header = (props) => {
+const Header = () => {
   return (
     <BodyStyled>
       <img src="/profile.jpg" alt="my image" className="profilePhoto" />

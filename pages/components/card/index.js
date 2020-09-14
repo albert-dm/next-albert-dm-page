@@ -1,12 +1,12 @@
-import React from "react";
-import { CardStyled } from "./cardStyled.styles";
+import React from 'react';
+import { CardStyled } from './cardStyled.styles';
 
 const CardList = (props) => {
   return (props.items.map((item) => (
-        <div className="item" key={item}>
-          {item}
-        </div>
-      ))
+    <div className="item" key={item}>
+      {item}
+    </div>
+  ))
   );
 };
 

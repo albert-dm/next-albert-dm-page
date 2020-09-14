@@ -1,5 +1,5 @@
-import styled from "styled-components";
-import { colors } from '../../theme'
+import styled from 'styled-components';
+import { colors } from '../../theme';
 
 export const CardStyled = styled.div `
   @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap");

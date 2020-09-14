@@ -1,21 +1,21 @@
 const frontend = {
-  name: "Frontend",
+  name: 'Frontend',
   items: [
-    "JavaScript",
-    "React/Redux",
-    "HTML",
-    "CSS",
-    "Bootstrap",
-    "SemanticUI",
+    'JavaScript',
+    'React/Redux',
+    'HTML',
+    'CSS',
+    'Bootstrap',
+    'SemanticUI',
   ],
 };
 const backend = {
-  name: "Backend",
-  items: ["Python", "Django", "AWS", "PostgreSQL"],
+  name: 'Backend',
+  items: ['Python', 'Django', 'AWS', 'PostgreSQL'],
 };
 const gameDev = {
-  name: "Game Development",
-  items: ["Unity", "Phaser", "PyGame"],
+  name: 'Game Development',
+  items: ['Unity', 'Phaser', 'PyGame'],
 };
 
 

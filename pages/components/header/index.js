@@ -1,7 +1,7 @@
-import React from "react";
-import { HeaderStyled } from "./headerStyled.styles";
+import React from 'react';
+import { HeaderStyled } from './headerStyled.styles';
 
-const Header = (props) => {
+const Header = () => {
   return (
     <HeaderStyled>
       <div className="title">
