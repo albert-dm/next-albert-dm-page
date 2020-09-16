@@ -1,11 +1,13 @@
 import React from 'react';
-import { mount } from 'enzyme';
-import Header from '../pages/index';
+import { shallow } from 'enzyme';
+import Header from '../pages/components/header/index';
 describe('Fazendo testes no Next.JS com Enzyme', () => {
-    it('Deve conter o texto ">DEV" dentro de um H1 no componente Index', () => {
-        const wrap = mount(<Header/>);
-        expect(wrap.find('h1').text()).toEqual('>DEV');
+    it('Deve conter o texto ">albert-dm.dev" dentro do componente Header', () => {
+        const app= shallow (<Header/>);
+        expect(app.find("div").text()).toEqual(">albert-dm.dev");
     });
 });
 
 
+
+  
