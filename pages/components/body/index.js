@@ -19,7 +19,7 @@ const Header = () => {
           <a href="https://github.com/albert-dm">
             <Github/>
           </a>
-          <a href="mailto:inbox@albert-dm.dev" class = "email">
+          <a href="mailto:inbox@albert-dm.dev">
             <Email/>
           </a>
         </div>
