@@ -1,5 +1,6 @@
 import React from 'react';
 import { CardStyled } from './cardStyled.styles';
+import { PropTypes, arrayOf } from 'prop-types';
 
 const CardList = (props) => {
   return (props.items.map((item) => (
@@ -21,6 +22,15 @@ const Card = (props) => {
       </div>
     </CardStyled>
   );
+};
+
+
+Card.propTypes = {
+  client : PropTypes.arrayOf({
+    name: PropTypes.string,
+    items: arrayOf(PropTypes.string)
+  })
+  
 };
 
 export default Card;
