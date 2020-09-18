@@ -26,6 +26,8 @@
   "rules": {
     "react/jsx-uses-react": "error",
     "react/jsx-uses-vars": "error",
+    "react/react-in-jsx-scope": "off",
+    "react/prop-types": 1,
     "indent": [
       "error",
       2,
