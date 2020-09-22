@@ -3,11 +3,11 @@ import { BioSectionStyled } from './bioSection.styles';
 import  Linkedin from '../icons/linkedin';
 import  Github from '../icons/github';
 import  Email from '../icons/email';
-import { ContentWrapper } from '../contentWrapper';
+import { Container } from '../container';
 
-const Header = () => {
+const BioSection = () => {
   return (
-    <ContentWrapper>
+    <Container>
       <BioSectionStyled>
         <img src="/profile.jpg" alt="my image" className="profilePhoto" />
         <div className="profileText">
@@ -29,8 +29,8 @@ const Header = () => {
           </div>
         </div>
       </BioSectionStyled>
-    </ContentWrapper>
+    </Container>
   );
 };
 
-export default Header;
+export default BioSection;

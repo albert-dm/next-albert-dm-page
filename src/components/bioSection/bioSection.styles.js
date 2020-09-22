@@ -1,6 +1,7 @@
 import styled from 'styled-components';
+import { ContentWrapper } from '../contentWrapper';
 
-export const BioSectionStyled = styled.div`
+export const BioSectionStyled = styled(ContentWrapper)`
     display:flex;
     flex-direction:row;
     justify-content:space-between;
