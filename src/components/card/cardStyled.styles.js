@@ -1,15 +1,10 @@
 import styled from 'styled-components';
-import { colors } from '../../theme';
+import { colors } from '../theme';
 
 export const CardStyled = styled.div `
-  @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap");
-
   display: flex;
   flex-direction: column;
-  font-size: 16px;
-  font-family: "Rubik", sans-serif;
   align-items: center;
-  text-align: center;
   
   .content {
     width: 40vh;
