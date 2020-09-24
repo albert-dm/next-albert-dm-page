@@ -10,6 +10,8 @@
     "test": "jest"
   },
   "dependencies": {
+    "@mdx-js/loader": "^1.6.18",
+    "@next/mdx": "^9.5.3",
     "eslint-plugin-react": "^7.20.6",
     "next": "9.5.3",
     "prop-types": "^15.7.2",
@@ -25,6 +27,7 @@
     "enzyme-adapter-react-16": "^1.15.4",
     "eslint": "^7.9.0",
     "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-mdx": "^1.8.2",
     "jest": "^26.4.2"
   }
 }

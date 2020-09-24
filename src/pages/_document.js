@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 import Document, { Head, Main, NextScript } from 'next/document';
 import { createGlobalStyle, ServerStyleSheet } from 'styled-components';
 
@@ -53,6 +54,7 @@ export default class MyDocument extends Document {
     return (
       <html>
         <Head>
+          
           <link href="https://fonts.googleapis.com/css2?family=Coda:wght@400;800&family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
           {this.props.styleTags}
         </Head>
@@ -64,3 +66,7 @@ export default class MyDocument extends Document {
     );
   }
 }
+
+
+
+

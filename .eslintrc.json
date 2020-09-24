@@ -13,7 +13,8 @@
   "extends": [
     "eslint:recommended",
     "plugin:react/recommended",
-    "prettier/react"
+    "prettier/react",
+    "plugin:mdx/recommended"
   ],
   "parserOptions": {
     "ecmaFeatures": {
@@ -39,4 +40,7 @@
     "quotes": ["error", "single"],
     "semi": ["error", "always"]
   }
+
+  
+
 }

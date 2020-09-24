@@ -1,9 +1,14 @@
 import { object, ReactComponentLike } from 'prop-types';
+import React from 'react';
 import Header from '../components/header';
+
+
+
 
 function MyApp({ Component, pageProps }) {
   return <>
     <Header/>
+
     <Component {...pageProps} />
   </>;
 }
