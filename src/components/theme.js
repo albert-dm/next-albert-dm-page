@@ -4,3 +4,5 @@ export const colors = {
   secondary: '#3F3DB9',
   primary: '#000000'
 };
+
+export const headerSize = '120px';
