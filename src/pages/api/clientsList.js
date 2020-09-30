@@ -1,24 +1,28 @@
-const frontend = {
-  name: 'Frontend',
-  items: [
-    'JavaScript',
-    'React/Redux',
-    'HTML',
-    'CSS',
-    'Bootstrap',
-    'SemanticUI',
-  ],
+
+
+const website= {
+ 
+  items: [ 'JavaScript' ],
+  img: './pc.png'
 };
-const backend = {
-  name: 'Backend',
-  items: ['Python', 'Django', 'AWS', 'PostgreSQL'],
+const ecommerce = {
+ 
+  items: ['Python'],
+  img: './Group7.png'
 };
-const gameDev = {
-  name: 'Game Development',
-  items: ['Unity', 'Phaser', 'PyGame'],
+const webApp = {
+
+  items: ['Unity'],
+  img: './Group8.png'
+};
+
+const mobile= {
+
+  items: ['Unity'],
+  img: './Group9.png'
 };
 
 
-const clients = [frontend, backend, gameDev];
+const clients = [website, ecommerce, webApp,mobile];
 
 export default clients;

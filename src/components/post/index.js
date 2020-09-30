@@ -1,6 +1,7 @@
-import Link from 'next/link';
+
 import { HeadPost } from '../HeadPost';
 import {PostStyled} from './post.styled';
+import {LinkStyled} from './post.styled';
 
 
 
@@ -11,20 +12,13 @@ export const Post = ({ post }) => {
   } = post;
 
   return(
-    <PostStyled >
+    <PostStyled>
       <HeadPost meta={meta} />
-      <div className = "details">
-        <Link href={'/blog' + link} >
-          <a>Read more &rarr;</a>
-        </Link>
-      </div>
-    
-    </PostStyled >
-     
-   
+      <LinkStyled href={'/blog' + link} >
+        Read more &rarr;
+      </LinkStyled>
+    </PostStyled>  
   );
-
-
 }; 
 
 

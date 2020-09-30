@@ -1,5 +1,4 @@
 import React from 'react';
-import Link from 'next/link';
 import Document, { Head, Main, NextScript } from 'next/document';
 import { createGlobalStyle, ServerStyleSheet } from 'styled-components';
 
@@ -31,6 +30,8 @@ const GlobalStyle = createGlobalStyle`
   }
   body {
     padding-top: 150px;
+
+   
   }
   };
 `;
@@ -62,6 +63,7 @@ export default class MyDocument extends Document {
           <Main />
           <NextScript />
         </body>
+       
       </html>
     );
   }

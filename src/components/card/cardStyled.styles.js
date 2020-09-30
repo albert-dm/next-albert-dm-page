@@ -7,8 +7,8 @@ export const CardStyled = styled.div `
   align-items: center;
   
   .content {
-    width: 40vh;
-    height: 40vh;
+    width: 45vh;
+    height: 45vh;
     border-style: solid;
     border-color: ${colors.secondary};
     border-width: 4px;
@@ -16,7 +16,13 @@ export const CardStyled = styled.div `
     border-radius:20px;
     flex-direction: column;
     background-color: white;
+    margin-bottom:60px;
+    margin-left: 50px;
+    margin-right:50px;
+    
+
   }
+
   .name {
     width: 100%;
     height: 40px;
@@ -27,11 +33,20 @@ export const CardStyled = styled.div `
     border-color: ${colors.secondary};
     border-top-left-radius:14px;
     border-top-right-radius:14px;
-    font-size:20px;
-    color:white;
-    cursor: pointer;
+    margin-bottom:20px;
+  
+  }
+
+  img{
+   
+    display: flex;
+    flex-direction:column;
+    margin-left:20px;
+    margin-right:20px;
+  
   }
   .description {
+
     display: flex;
     flex-direction:column;
     justify-content: center;
@@ -39,8 +54,7 @@ export const CardStyled = styled.div `
     font-size: 16px;
     font-family: "Rubik", sans-serif;
     cursor: pointer;
+
   }
-  .description:hover{
-    background-color: #cccccc;
-  }
+
 `;

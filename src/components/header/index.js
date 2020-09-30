@@ -1,6 +1,6 @@
 import React from 'react';
 import { ContentWrapper } from '../contentWrapper';
-import { HeaderStyled } from './headerStyled.styles';
+import { HeaderStyled } from './header.styled';
 import NavBar from '../navBar';
 
 

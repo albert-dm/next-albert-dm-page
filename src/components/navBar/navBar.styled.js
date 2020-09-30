@@ -3,8 +3,9 @@ import styled from 'styled-components';
 import { colors } from '../theme';
 
 export const NavBarStyled= styled.nav`
-  padding: 15px;
+
   display: flex;
+  padding: 15px;
   background: ${colors.white};
   a {
     padding: 0 15px;
@@ -14,7 +15,7 @@ export const NavBarStyled= styled.nav`
   }
 
   a:hover{
-    text-decoration: underline;
+    color: ${colors.secondary};
 
   }
 `;

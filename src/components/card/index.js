@@ -11,11 +11,13 @@ const CardList = (props) => {
   );
 };
 
+
 const Card = (props) => {
   return (
     <CardStyled>
       <div className="content">
         <div className="name">{props.client.name}</div>
+        <img  src={props.client.img} className="img"></img>
         <div className="description">
           <CardList items={props.client.items} />
         </div>

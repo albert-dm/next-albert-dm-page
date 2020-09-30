@@ -7,7 +7,7 @@ const CardContainer = (props) => {
   return (
     <CardContainerStyled>
       <div className="title">
-        {'>'}CLIENTS
+        {'>'}SERVICES
       </div>
       <div className="cards">
         {props.clients.map((client) => (
@@ -17,6 +17,7 @@ const CardContainer = (props) => {
     </CardContainerStyled>
   );
 };
+
 
 
 CardContainer.propTypes = {
