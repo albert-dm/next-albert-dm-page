@@ -7,7 +7,6 @@ const Footer = () => {
   return (
     <FooterStyled>
       <ul>
-        <li>@albert-dm</li>
         <li>inbox@albert-dm.dev</li>
         <li>Automation and Software Developer</li>
         <li>albert-dm.dev-2020</li>

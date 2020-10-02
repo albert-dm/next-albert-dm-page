@@ -1,13 +1,16 @@
 import { Post } from '../../components/post';
 import { posts } from '../../../getAllPosts';
-import { PostStyled} from './list.styled';
+import { Container } from '../../components/container';
+import { PostListWrapper } from './list.styled';
 
 export default function IndexPage() {
   return (
-    <PostStyled>
-      {posts.map((post) => (
-        <Post key={post.link} post={post} />
-      ))}
-    </PostStyled>
+    <Container>
+      <PostListWrapper>
+        {posts.map((post) => (
+          <Post key={post.link} post={post} />
+        ))}
+      </PostListWrapper>
+    </Container>
   );
 }

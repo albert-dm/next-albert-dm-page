@@ -1,7 +1,8 @@
 import React from 'react';
-import clients from './api/clientsList';
+import services from '../data/services';
 import CardContainer from '../components/cardContainer';
 import BioSection from '../components/bioSection';
+import {ServicesSection} from '../components/servicesSection';
 import Header from '../components/header';
 import ClientsContainer from '../components/clientsContainer';
 
@@ -13,7 +14,8 @@ const App = () => {
     <div>
       <Header/>
       <BioSection/>
-      <CardContainer clients={clients}/>
+      <ServicesSection services={services} />
+      {/* <CardContainer /> */}
       <ClientsContainer/>
     
     </div>

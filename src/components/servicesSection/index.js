@@ -1,10 +1,12 @@
+import CardContainer from '../cardContainer';
 import { Container } from '../container';
-import { ContentWrapper } from '../contentWrapper';
+import { SevicesSectionWrapper } from './servicesSection.style';
 
-export const ServicesSection = () => {
+export const ServicesSection = ({services}) => {
   return <Container dark>
-    <ContentWrapper>
+    <SevicesSectionWrapper>
       <h2>{'>'}services</h2>
-    </ContentWrapper>
+      <CardContainer cards={services} />
+    </SevicesSectionWrapper>
   </Container>;
 };

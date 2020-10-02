@@ -2,25 +2,19 @@ import React from 'react';
 import { CardStyled } from './cardStyled.styles';
 import { PropTypes, arrayOf } from 'prop-types';
 
-const CardList = (props) => {
-  return (props.items.map((item) => (
-    <div className="item" key={item}>
-      {item}
-    </div>
-  ))
-  );
-};
-
-
-const Card = (props) => {
+const Card = ({
+  title,
+  description,
+  img
+}) => {
   return (
     <CardStyled>
+      <div className="imgWrapper">
+        <img src={img} alt={title}></img>
+      </div>
       <div className="content">
-        <div className="name">{props.client.name}</div>
-        <img  src={props.client.img} className="img"></img>
-        <div className="description">
-          <CardList items={props.client.items} />
-        </div>
+        <h3>{title}</h3>
+        <p>{description}</p>
       </div>
     </CardStyled>
   );

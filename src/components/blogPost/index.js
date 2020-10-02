@@ -1,11 +1,15 @@
-import { HeadPost } from '../HeadPost';
+import { Container } from '../container';
+import { BlogPostWrapper } from './blogPost.styles';
 
 
 export default function BlogPost({ children, meta}) {
   return (
-    <>
-      <HeadPost meta={meta}/>
-      <article>{children}</article>
-    </>
+    <Container>
+      <BlogPostWrapper>
+        <h2>{meta.title}</h2>
+        <span>{meta.date}</span>
+        <article>{children}</article>
+      </BlogPostWrapper>
+    </Container>
   );
 }
