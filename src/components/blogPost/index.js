@@ -1,5 +1,7 @@
+/* eslint-disable react/prop-types */
 import { Container } from '../container';
 import { BlogPostWrapper } from './blogPost.styles';
+
 
 
 export default function BlogPost({ children, meta}) {
@@ -13,3 +15,4 @@ export default function BlogPost({ children, meta}) {
     </Container>
   );
 }
+

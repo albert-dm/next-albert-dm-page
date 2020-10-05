@@ -1,6 +1,6 @@
 import React from 'react';
 import { CardStyled } from './cardStyled.styles';
-import { PropTypes, arrayOf } from 'prop-types';
+import PropTypes from 'prop-types';
 
 const Card = ({
   title,
@@ -22,10 +22,10 @@ const Card = ({
 
 
 Card.propTypes = {
-  client : PropTypes.arrayOf({
-    name: PropTypes.string,
-    items: arrayOf(PropTypes.string)
-  })
+  title: PropTypes.string,
+  description: PropTypes.string,
+  img: PropTypes.string
+
   
 };
 

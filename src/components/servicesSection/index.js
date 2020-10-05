@@ -1,6 +1,6 @@
 import CardContainer from '../cardContainer';
 import { Container } from '../container';
-import { SevicesSectionWrapper } from './servicesSection.style';
+import { SevicesSectionWrapper } from './servicesSectionStyle.styles';
 
 export const ServicesSection = ({services}) => {
   return <Container dark>
