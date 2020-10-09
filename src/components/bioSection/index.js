@@ -5,6 +5,8 @@ import  Github from '../icons/github';
 import  Email from '../icons/email';
 import { Container } from '../container';
 
+
+
 const BioSection = () => {
   return (
     <Container>

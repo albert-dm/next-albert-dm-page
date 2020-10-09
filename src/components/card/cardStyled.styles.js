@@ -5,42 +5,39 @@ export const CardStyled = styled.div `
   display: flex;
   flex-direction: column;
   align-items: center;
-  
-  .content {
-    width: 40vh;
-    height: 40vh;
-    border-style: solid;
-    border-color: ${colors.secondary};
-    border-width: 4px;
+  width: 400px;
+  margin: 100px;
+  border-style: solid;
+  border-color: ${colors.secondary};
+  border-width: 4px;
+  border-top-width: 35px;
+  height: 420px;
+  margin-top: 16px;
+  padding: 15px;
+  color: ${colors.primary};
+  background-color: ${colors.white};
+  border-radius: 20px;
+
+  .imgWrapper {
+    height: 250px;
     display: flex;
-    border-radius:20px;
     flex-direction: column;
-    background-color: white;
-  }
-  .name {
-    width: 100%;
-    height: 40px;
-    display: flex;
     justify-content: center;
-    align-items: center;
-    background-color: ${colors.secondary};
-    border-color: ${colors.secondary};
-    border-top-left-radius:14px;
-    border-top-right-radius:14px;
-    font-size:20px;
-    color:white;
-    cursor: pointer;
   }
-  .description {
-    display: flex;
-    flex-direction:column;
-    justify-content: center;
-    height:100%;
-    font-size: 16px;
-    font-family: "Rubik", sans-serif;
-    cursor: pointer;
+  img {
+    width: 250px;
   }
-  .description:hover{
-    background-color: #cccccc;
+  .content {
+    h3 {
+      width: 100%;
+      text-align: center;
+    }
   }
+
+  @media only screen and (max-width: 600px) {
+    width: auto;
+    margin: 50px 16px;
+  }
+ 
+
 `;

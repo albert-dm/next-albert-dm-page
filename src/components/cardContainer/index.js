@@ -1,26 +1,26 @@
 import React from 'react';
 import Card from '../card';
 import { CardContainerStyled } from './cardContainerStyled.styles';
-import { PropTypes} from 'prop-types';
+import { arrayOf, shape, string} from 'prop-types';
 
-const CardContainer = (props) => {
+const CardContainer = ({ cards }) => {
   return (
     <CardContainerStyled>
-      <div className="title">
-        {'>'}CLIENTS
-      </div>
-      <div className="cards">
-        {props.clients.map((client) => (
-          <Card client={client} key={client.name} />
-        ))}
-      </div>
+      {cards.map((card) => (
+        <Card key={card.title} title={card.title} description={card.description} img={card.img} />
+      ))}
     </CardContainerStyled>
   );
 };
 
 
+
 CardContainer.propTypes = {
-  clients : PropTypes.arrayOf(PropTypes.client)
+  cards: arrayOf(shape({
+    title: string,
+    description: string,
+    img: string
+  }))
   
 };
 

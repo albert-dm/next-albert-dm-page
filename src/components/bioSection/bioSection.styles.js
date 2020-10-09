@@ -8,7 +8,6 @@ export const BioSectionStyled = styled(ContentWrapper)`
     justify-content:space-between;
     flex-wrap: wrap;
     min-height: calc(100vh - ${headerSize});
-    padding-top: ${headerSize};
     .profilePhoto {
       display: block;
       margin: auto;

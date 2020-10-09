@@ -5,5 +5,6 @@ export const Container = styled.section`
   width: 100%;
   ${({dark}) => dark &&
   `background-color: ${colors.terminal};
-  color: ${colors.white};`}
+   color: ${colors.white};`}
 `;
+
