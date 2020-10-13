@@ -10,4 +10,4 @@ export const colors = {
 
 };
 
-export const headerSize = '120px';
+export const headerSize = '140px';

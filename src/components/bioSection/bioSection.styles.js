@@ -30,4 +30,7 @@ export const BioSectionStyled = styled(ContentWrapper)`
       justify-content:space-around;
       padding: 20px 0;
     }
+
+
+    
   `;

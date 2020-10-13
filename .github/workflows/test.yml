@@ -38,5 +38,11 @@ jobs:
         uses: coverallsapp/github-action@master
         with:
           github-token: ${{secrets.GITHUB_TOKEN}}
-
       
+      - uses: actions-hub/gcloud@master
+      env:
+        PROJECT_ID: next-albert-dm-page
+        APPLICATION_CREDENTIALS: ${{ secrets.base64 ~/next-albert-dm-page-d51516e23e55.json }}
+      with:
+        args: app deploy app.yaml
+  
