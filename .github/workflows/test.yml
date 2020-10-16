@@ -38,17 +38,14 @@ jobs:
         uses: coverallsapp/github-action@master
         with:
           github-token: ${{secrets.GITHUB_TOKEN}}
-      
-      - name: Activate Service Account 
-        env: 
-          GCLOUD_AUTH: ${{ secrets.GCLOUD_AUTH }}
-        run: |
-          echo "$GCLOUD_AUTH" | base64 --decode > "$HOME"/gcloud.json
-          sh -c "gcloud auth activate-service-account --key-file=$HOME/gcloud.json $*"
 
-      - name: deploy app
-        run: |
-          gcloud app deploy
 
+      - uses: actions/gcloud/auth@master
+          env:
+            GCLOUD_AUTH: ${{ secrets.GCLOUD_AUTH }}
+    
+      - uses: actions/gcloud/cli@master
+          with:
+            args: "app deploy --quiet --project=next-albert-dm-page "
 
             
