@@ -40,7 +40,7 @@ jobs:
           github-token: ${{secrets.GITHUB_TOKEN}}
 
       - name: Install gcloud SDK
-          run: |
+        run: |
             sudo apt-get update && sudo apt-get install google-cloud-sdk
       
       - name: Activate Service Account 
