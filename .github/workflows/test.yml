@@ -38,10 +38,12 @@ jobs:
         with:
           github-token: ${{secrets.GITHUB_TOKEN}}
       
-      - uses: actions-hub/gcloud@master
-      env:
-        PROJECT_ID: next-albert-dm-page
-        APPLICATION_CREDENTIALS: ${{secrets.GCLOUD_AUTH}}
-      with:
-        args: app deploy app.yaml
+     
+      - uses: actions/gcloud/auth@master
+        env:
+          GCLOUD_AUTH: ${{ secrets.GCLOUD_AUTH }}
+  
+      - uses: actions/gcloud/cli@master
+        with:
+          args: "app deploy --quiet --project=next-albert-dm-page"
   
