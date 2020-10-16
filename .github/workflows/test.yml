@@ -39,9 +39,6 @@ jobs:
         with:
           github-token: ${{secrets.GITHUB_TOKEN}}
       
-      - name: Install gcloud SDK
-        run: |
-          sudo apt-get update && sudo apt-get install google-cloud-sdk
       - name: Activate Service Account 
         env: 
           GCLOUD_AUTH: ${{ secrets.GCLOUD_AUTH }}
@@ -52,3 +49,6 @@ jobs:
       - name: deploy function 
         run: |
             gcloud functions deploy next-albert-dm-page --runtime nodejs8 --project demoneil --service-account github-actions@demoneil.iam.gserviceaccount.com 
+
+
+            
