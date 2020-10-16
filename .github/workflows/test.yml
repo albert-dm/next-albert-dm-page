@@ -44,7 +44,7 @@ jobs:
           sudo apt-get update && sudo apt-get install google-cloud-sdk
       - name: Activate Service Account 
         env: 
-          GCLOUD_AUTH: ${{ secrets.GCLOUD_AUTH }}
+          GCLOUD_AUTH: ${{ secrets.GCP_SA_KEY }}
         run: |
           echo "$GCLOUD_AUTH" | base64 --decode > "$HOME"/gcloud.json
           sh -c "gcloud auth activate-service-account --key-file=$HOME/gcloud.json $*"
