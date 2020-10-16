@@ -7,7 +7,6 @@ import Head from '../components/head';
 import ClientsSection from '../components/clientsSection';
 
 
-// import { ServicesSection } from '../components/servicesSection';
 
 const App = () => {
   return (
