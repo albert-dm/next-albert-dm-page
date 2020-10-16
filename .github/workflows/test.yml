@@ -38,10 +38,6 @@ jobs:
         uses: coverallsapp/github-action@master
         with:
           github-token: ${{secrets.GITHUB_TOKEN}}
-
-      - name: Install gcloud SDK
-        run: |
-            sudo apt-get update && sudo apt-get install google-cloud-sdk
       
       - name: Activate Service Account 
         env: 
