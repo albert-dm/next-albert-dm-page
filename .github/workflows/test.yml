@@ -2,10 +2,7 @@ name: ci
 
 on: [push]
 
-paths:
-  - 'albert-dm/next-albert-dm-page /*'
  
-
 jobs:
   build:
     runs-on: ubuntu-latest
