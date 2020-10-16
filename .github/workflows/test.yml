@@ -45,11 +45,14 @@ jobs:
           service_account_email: ${{ secrets.GCP_SA_EMAIL }}
           service_account_key: ${{ secrets.GCP_SA_KEY }}
           project_id: ${{ secrets.PROJECT_ID }}
-        # An optional variables parameter can be used
-  
+          # An optional variables parameter can be used
+         
+        
       - name: Publish app to Google App Engine
         run: |
           # This client-secret.json is converted by GCP_SA_KEY.
-          gcloud auth activate-service-account ${{ secrets.GCP_SA_EMAIL }} 
-          gcloud config set project ${{ secrets.PROJECT_ID }
+          gcloud auth activate-service-account ${{ secrets.GCP_SA_EMAIL }} --key-file=client-secret.json
+          gcloud config set project ${{ secrets.PROJECT_ID }}
           gcloud -q app deploy app.yaml --promote
+          
+   
