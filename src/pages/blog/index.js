@@ -1,10 +1,8 @@
-import { Post } from '../../components/post';
-import { posts } from '../../../getAllPosts';
+
 import { Container } from '../../components/container';
-import { PostListWrapper } from './list.styled';
 import Head  from '../../components/head';
 
-export default function IndexPage() {
+const  IndexPage = () => { 
   return (
     <Container>
       <Head
@@ -12,11 +10,11 @@ export default function IndexPage() {
         description ="Blog to show how I developed all my Home Page"
         siteName = "Albert-dm.dev" 
       />
-      <PostListWrapper>
-        {posts.map((post) => (
-          <Post key={post.link} post={post} />
-        ))}
-      </PostListWrapper>
+     
     </Container>
   );
-}
+};
+
+export default IndexPage;
+
+
