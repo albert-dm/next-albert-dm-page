@@ -4,9 +4,8 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "rm -rf ./build && NODE_ENV=production next build",
-    "start": "next start -p 8080",
-    "deploy": "npm run build && gcloud app deploy",
+    "build": "next build",
+    "start": "NODE_ENV=production server.js",
     "lint": "eslint src --ext js",
     "test": "jest",
     "release": "standard-version"
@@ -15,7 +14,7 @@
     "@mdx-js/loader": "^1.6.18",
     "@next/mdx": "^9.5.3",
     "eslint-plugin-react": "^7.20.6",
-    "next": "^9.5.5",
+    "next": "9.5.3",
     "prop-types": "^15.7.2",
     "react": "16.13.1",
     "react-dom": "16.13.1",
