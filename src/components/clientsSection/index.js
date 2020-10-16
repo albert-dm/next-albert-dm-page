@@ -7,9 +7,9 @@ const ClientsSection = () => {
   return<ClientsSectionStyled>
     <h2>{'>'}CLIENTS </h2>
     <ul>
-      <li><a href="https://planerio.de/"><img src="/planerio.png"  alt="logo planerio"/></a></li>
-      <li><a href="https://ambaya.com.br"><img src="/ambaya.png"  alt="logo ambaya semijoias"/></a></li>
-      <li><a href="https://www.saraivaeducacao.com.br/"><img src="/saraiva.png"  alt="logo saraiva livraria"/></a></li>
+      <li><a href="https://planerio.de/"><img src="/planerio.png"  alt="logo da empresa planerio"/></a></li>
+      <li><a href="https://ambaya.com.br"><img src="/ambaya.png"  alt="logo da loja ambaya semijoias"/></a></li>
+      <li><a href="https://www.saraivaeducacao.com.br/"><img src="/saraiva.png"  alt="logo da saraiva educacao"/></a></li>
     </ul>
   </ClientsSectionStyled>;
 

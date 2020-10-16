@@ -1,5 +1,5 @@
 import React from 'react';
-import Document, { Head, Main, NextScript } from 'next/document';
+import Document, {Html, Head, Main, NextScript } from 'next/document';
 import { createGlobalStyle, ServerStyleSheet } from 'styled-components';
 
 const GlobalStyle = createGlobalStyle`
@@ -42,7 +42,7 @@ export default class MyDocument extends Document {
     const page = renderPage((App) => (props) =>
       sheet.collectStyles(
         <>
-          <GlobalStyle />
+          <GlobalStyle/>
           <App {...props} />
         </>
       ),
@@ -51,24 +51,23 @@ export default class MyDocument extends Document {
     return { ...page, styleTags };
   }
 
+
   render() {
     return (
-      <html>
-        <Head>
-          
-          <link href="https://fonts.googleapis.com/css2?family=Coda:wght@400;800&family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+      <Html>
+        <Head>    
           {this.props.styleTags}
+          <link href="https://fonts.googleapis.com/css2?family=Coda:wght@400;800&family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
         </Head>
         <body>
           <Main />
           <NextScript />
         </body>
-       
-      </html>
+      </Html>
     );
   }
-}
 
+}
 
 
 

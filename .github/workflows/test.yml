@@ -1,8 +1,8 @@
 name: ci
 
-on: 
-  pull_request:
- 
+on: [push]
+
+
 
 jobs:
   build:
@@ -13,7 +13,7 @@ jobs:
  
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v1
+        uses: actions/checkout@v2
         with:
             fetch-depth: 0
 
@@ -38,11 +38,21 @@ jobs:
         uses: coverallsapp/github-action@master
         with:
           github-token: ${{secrets.GITHUB_TOKEN}}
-      
-      - uses: actions-hub/gcloud@master
-      env:
-        PROJECT_ID: next-albert-dm-page
-        APPLICATION_CREDENTIALS: ${{ secrets.base64 ~/next-albert-dm-page-d51516e23e55.json }}
-      with:
-        args: app deploy app.yaml
-  
+
+      - name: Initialize Google Cloud SDK
+        uses: zxyle/publish-gae-action@master
+        with:
+          service_account_email: ${{ secrets.GCP_SA_EMAIL }}
+          service_account_key: ${{ secrets.GCP_SA_KEY }}
+          project_id: ${{ secrets.PROJECT_ID }}
+          # An optional variables parameter can be used
+         
+        
+      - name: Publish app to Google App Engine
+        run: |
+          # This client-secret.json is converted by GCP_SA_KEY.
+          gcloud auth activate-service-account ${{ secrets.GCP_SA_EMAIL }} --key-file=client-secret.json
+          gcloud config set project ${{ secrets.PROJECT_ID }}
+          gcloud app deploy app.yaml 
+          
+   

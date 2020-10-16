@@ -11,7 +11,7 @@ const BioSection = () => {
   return (
     <Container>
       <BioSectionStyled>
-        <img src="/profile.jpg" alt="my image" className="profilePhoto" />
+        <img src="/profile.jpg"  className="profilePhoto"  alt = "Foto de Desenvolvedor de Software Albert Dias"/>
         <div className="profileText">
           <h2>{'>'}dev</h2>
           <p>Software Developer and Automation Engineer</p>
@@ -20,13 +20,13 @@ const BioSection = () => {
           <p>Any buisiness can and needs to be digital and in the web. If you want to talk about it, fell free to contact me!</p>
           <div className="socialButtons">
             <a href="https://www.linkedin.com/in/albert-moreira-62b9272b/">
-              <Linkedin size="50"/>
+              <Linkedin size="50" alt = "Icone da midia social Linkedin" />
             </a>
             <a href="https://github.com/albert-dm">
-              <Github size="50"/>
+              <Github size="50" alt = "Icone da plataforma de versionamento de codigo Github"/>
             </a>
             <a href="mailto:inbox@albert-dm.dev">
-              <Email size="50"/>
+              <Email size="50" alt = "Icone de e-mail"/>
             </a>
           </div>
         </div>

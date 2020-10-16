@@ -1,0 +1,1 @@
+{"ast":null,"code":"import styled from 'styled-components';\nimport { ContentWrapper } from '../contentWrapper';\nexport var SevicesSectionWrapper = styled(ContentWrapper).withConfig({\n  displayName: \"servicesSectionStylestyles__SevicesSectionWrapper\",\n  componentId: \"xoz7rq-0\"\n})([\"h2{padding:40px 0 30px 0;}\"]);","map":null,"metadata":{},"sourceType":"module"}
