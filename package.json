@@ -3,9 +3,10 @@
   "version": "0.2.3",
   "private": true,
   "scripts": {
-    "dev": "node server.js",
+    "dev": "NODE_ENV=production server.js",
     "build": "next build",
     "start": "NODE_ENV=production server.js",
+    "gcp-build": "npm run build" ,
     "lint": "eslint src --ext js",
     "test": "jest",
     "release": "standard-version"
