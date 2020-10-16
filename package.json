@@ -3,10 +3,10 @@
   "version": "0.2.3",
   "private": true,
   "scripts": {
-    "dev": "NODE_ENV=production server.js",
-    "build": "next build",
-    "start": "NODE_ENV=production server.js",
-    "gcp-build": "npm run build" ,
+    "proxy": "micro-proxy -r proxy.json",
+    "dev": "concurrently 'cd ./checkout && yarn dev' 'cd ./catalog && yarn dev' 'yarn proxy'",
+    "build":  "cd ./checkout && next build && cd ../catalog && next build",
+    "start": "concurrently 'cd ./checkout && yarn start' 'cd ./catalog && yarn start' 'yarn proxy'",
     "lint": "eslint src --ext js",
     "test": "jest",
     "release": "standard-version"
