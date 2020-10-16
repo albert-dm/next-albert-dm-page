@@ -43,7 +43,7 @@ jobs:
           version: '290.0.1'
           project_id: ${{ secrets.GCP_PROJECT_ID }}
           service_account_key: ${{ secrets.GCP_SA_KEY }}
-        - run: gcloud info
+       
       
       - name: Upload filed to bucket
         run: gsutil -m rsync -R ./build gs://"$BUCKET"
