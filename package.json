@@ -3,10 +3,14 @@
   "version": "0.2.3",
   "private": true,
   "scripts": {
-  
+
+   "gcp-predeploy": "find ./build -name '\\[...*' -exec bash -c 'mv \"$1\" \"${1/.../@@@}\"' -- {} \\;",
+    "gcp-build": "find ./build -name '\\[@@@*' -exec bash -c 'mv \"$1\" \"${1/@@@/...}\"' -- {} \\;",
+    "build": "rm -rf ./build && NODE_ENV=production next build",
+    "start": "next start -p 8080",
+    "deploy": "npm run build && npm run gcp-predeploy && gcloud app deploy",
     "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
+    
     "lint": "eslint src --ext js",
     "test": "jest",
     "release": "standard-version"
