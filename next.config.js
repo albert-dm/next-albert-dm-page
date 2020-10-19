@@ -10,8 +10,6 @@ module.exports = withMDX({
 });
 
 
-module.exports = {
-  distDir: 'build',
-};
+
 
 
