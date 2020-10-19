@@ -3,12 +3,10 @@
   "version": "0.2.3",
   "private": true,
   "scripts": {
-
     "build": " next build",
     "gcp-build": "npm run build",
     "start": "next start",
     "dev": "next dev",
-    
     "lint": "eslint src --ext js",
     "test": "jest",
     "release": "standard-version"
