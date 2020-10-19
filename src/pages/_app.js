@@ -1,4 +1,4 @@
-import { object, ReactComponentLike } from 'prop-types';
+import { object } from 'prop-types';
 import React from 'react';
 import Footer from '../components/footer';
 import Header from '../components/header';
@@ -6,6 +6,7 @@ import Header from '../components/header';
 
 
 
+// eslint-disable-next-line react/prop-types
 function MyApp({ Component, pageProps }) {
   return <>
     <Header/>
@@ -15,7 +16,6 @@ function MyApp({ Component, pageProps }) {
 }
 
 MyApp.propTypes = {
-  Component: ReactComponentLike,
   pageProps: object,
 };
 

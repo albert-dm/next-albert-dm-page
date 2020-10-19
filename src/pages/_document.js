@@ -57,6 +57,7 @@ export default class MyDocument extends Document {
       <Html>
         <Head>    
           {this.props.styleTags}
+          <link href="https://fonts.googleapis.com/css2?family=Coda:wght@400;800&family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
         </Head>
         <body>
           <Main />

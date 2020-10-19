@@ -14,7 +14,7 @@ const Head = ({ pageTitle, description ,siteName}) => (
 
   
 
-    <link href="https://fonts.googleapis.com/css2?family=Coda:wght@400;800&family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+    
   </NextHead>
 );
 

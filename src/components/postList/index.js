@@ -1,10 +1,17 @@
 
 import { Post } from '../../components/post';
 import { posts } from '../../../getAllPosts';
-import { PostListWrapper } from './posList.styled';
+import { PostListWrapper } from './postList.styled';
 
-<PostListWrapper>
-  {posts.map((post) => (
-    <Post key={post.link} post={post} />
-  ))}
-</PostListWrapper>;
+
+const  PostList = () => { 
+  return (
+    <PostListWrapper>
+      {posts.map((post) => (
+        <Post key={post.link} post={post} />
+      ))}
+    </PostListWrapper>
+  );
+};
+
+export default PostList;
