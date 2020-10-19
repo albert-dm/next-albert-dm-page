@@ -1,0 +1,13 @@
+{
+  "/_app": "pages/_app.js",
+  "/_document": "pages/_document.js",
+  "/blog": "pages/blog.html",
+  "/blog/post-1": "pages/blog/post-1.html",
+  "/blog/post-2": "pages/blog/post-2.html",
+  "/blog/post-3": "pages/blog/post-3.html",
+  "/blog/post-4": "pages/blog/post-4.html",
+  "/blog/post-5": "pages/blog/post-5.html",
+  "/": "pages/index.html",
+  "/_error": "pages/_error.js",
+  "/404": "pages/404.html"
+}
