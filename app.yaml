@@ -1,10 +1,12 @@
-env: standard
 runtime: nodejs12
-service: default
+
+module: default
 
 handlers:
-  - url: /.*
-    secure: always
-    script: auto
+  - url: /
+    static_files: out/index.html
+    upload: out/index.html
 
-  
+  - url: /(.*)
+    static_files: out/\1
+    upload: out/(.*)

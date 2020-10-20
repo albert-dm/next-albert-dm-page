@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "build": " next build",
-    "gcp-build": "npm run build",
+    "gcp-build": "rm -rf ./out && NODE_ENV=production next build && next export",
     "start": "next start",
     "dev": "next dev",
     "lint": "eslint src --ext js",
