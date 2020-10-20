@@ -10,3 +10,11 @@ handlers:
   - url: /(.*)
     static_files: out/\1
     upload: out/(.*)
+
+  - url: /(.+)/(.*\.js)
+    mime_type: text/javascript
+    static_files: static/\2
+    upload: static/(.*\.js)
+
+  
+ 
