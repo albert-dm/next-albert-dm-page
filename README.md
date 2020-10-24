@@ -1,22 +1,75 @@
 <!-- @format -->
 
-## Project Title
+## albert-dm Portifolio and Blog
 
-This project aims to be a portfolio template for developers using Next.js .
+This project is meant to be the place where I show my work and myself as a Professional and a Person.
+It extends from the code to it'ts result. I'll try to show how I come up to solutions in my day-to-day and also use this project as a playground for experimentation. 
+
+Any suggestion or PR will be always very welcome.
+
+For now we are going with a Next.JS website, that shows my portifolio and has a blog, based on MDX files (one for each post).
+
+This brings two different points of attention:
+- Blog posts are added using a PR to the `master` branch with a new post MDX component
+- We use static file generations and serve fully static website
+
+Let's start
 
 ## Getting Started
 
-First, run the development server:
+First of all clone this repository and enter the project folder.
+
+Install project dependencies:
 
 ```bash
-npm run dev
-# or
+yarn install
+```
+
+Now, run de development server
+
+```bash
 yarn dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-## Running the Test
+## Quality tests
+
+To be sure your code is good to go, first you should test its quality. 
+
+Make sure you pass linting:
+
+```bash
+yarn lint
+```
+
+And unit tests:
+
+```bash
+yarn test
+```
+
+## Generating production build
+
+To generate static files, run the comand
+
+```bash
+yarn export
+```
+
+The files will be inside the generated `/out` folder
+
+## Contributing
+
+Make sure to check the quality of you code before pushing it :)
+
+To safe commit you code and guarantee commit standarization, use the command
+
+```bash
+yarn commit
+```
+
+Create a PR. If it is pushed to master your contribution will be live
 
 ## Learn More about Next.js
 
