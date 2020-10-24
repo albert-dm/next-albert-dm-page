@@ -7,9 +7,10 @@ import { PostListWrapper } from './postList.styled';
 const  PostList = () => { 
   return (
     <PostListWrapper>
-      {posts.map((post) => (
+      {posts.length > 0  ? posts.map((post) => (
         <Post key={post.link} post={post} />
-      ))}
+      ))
+        : <h1>Hello, you will see nice posts here soon :)</h1>}
     </PostListWrapper>
   );
 };
