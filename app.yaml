@@ -1,0 +1,19 @@
+runtime: nodejs12
+
+module: default
+
+handlers:
+  # Serve all static files with url ending with a file extension
+  - url: /
+    static_files: out/index.html
+    upload: out/index.html
+    secure: always
+
+  - url: /(.*)/
+    static_files: out/\1/index.html
+    upload: out/(.*)/index.html
+    secure: always
+
+  - url: /(.*)
+    static_files: out/\1
+    upload: out/(.*)

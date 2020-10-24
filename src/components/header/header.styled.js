@@ -10,4 +10,11 @@ export const HeaderStyled = styled.div`
     border-bottom: 2px solid ${colors.secondary};
     height: ${headerSize};
     overflow: hidden;
+    @media only screen and (max-width: 600px) {
+      h1{
+        font-size: 31px;
+      }
+        
+    }
+
   `;

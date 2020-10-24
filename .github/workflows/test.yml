@@ -1,21 +1,19 @@
 name: ci
 
-on: 
-  pull_request:
- 
+on: [pull_request]
 
 jobs:
   build:
     runs-on: ubuntu-latest
 
     env:
-        GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
- 
+      GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
+
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v1
+        uses: actions/checkout@v2
         with:
-            fetch-depth: 0
+          fetch-depth: 0
 
       - name: Set up Node
         uses: actions/setup-node@v1
@@ -27,16 +25,14 @@ jobs:
 
       - name: Check tests
         run: yarn test --coverage
-            
+
       - name: Check linting
         run: yarn lint
 
       - name: Check commit message
         uses: wagoid/commitlint-github-action@v1
-      
+
       - name: Coveralls
         uses: coverallsapp/github-action@master
         with:
           github-token: ${{secrets.GITHUB_TOKEN}}
-
-      

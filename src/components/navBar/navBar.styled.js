@@ -6,12 +6,12 @@ export const NavBarStyled= styled.nav`
 
   display: flex;
   padding: 15px;
+  font-size:25px;
   background: ${colors.white};
   a {
     padding: 0 15px;
     color: ${colors.primary};
     text-decoration: none;
-
   }
 
   a:hover{
