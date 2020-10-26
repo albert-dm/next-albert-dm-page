@@ -14,6 +14,11 @@ handlers:
     upload: out/(.*)/index.html
     secure: always
 
+  - url: /blog/(.*)/
+    static_files: out/blog/\1/index.html
+    upload: out/blog/(.*)/index.html
+    secure: always
+
   - url: /(.*)
     static_files: out/\1
     upload: out/(.*)
