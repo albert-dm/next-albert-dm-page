@@ -15,6 +15,7 @@ export const PostStyled = styled.div `
 export const LinkStyled = styled.a`
 
   color: ${colors.grayDark};
+  font-size: 14px;
   text-decoration:none;
 
   :hover{

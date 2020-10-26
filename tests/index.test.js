@@ -1,6 +1,6 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import Header from '../src/components/header/index';
+import {Header} from '../src/components/header/index';
 import BioSection from '../src/components/bioSection/index';
 
 describe('Fazendo testes no Next.JS com Enzyme', () => {
