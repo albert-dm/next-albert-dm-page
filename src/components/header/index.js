@@ -3,9 +3,7 @@ import { ContentWrapper } from '../contentWrapper';
 import { HeaderStyled } from './header.styled';
 import NavBar from '../navBar';
 
-
-
-const Header = () => {
+export const Header = () => {
   return (
     <HeaderStyled>
       <ContentWrapper>
@@ -17,5 +15,3 @@ const Header = () => {
     </HeaderStyled>
   );
 };
-
-export default Header;
