@@ -1,6 +1,6 @@
 
 import { Container } from '../../components/container';
-import Head  from '../../components/head';
+import {Head}  from '../../components/head';
 import PostList from '../../components/postList';
 
 const  IndexPage = () => { 
