@@ -22,16 +22,14 @@ const GlobalStyle = createGlobalStyle`
   h3 {
     font-family: 'Coda', cursive;
     font-weight: 800;
-    font-size: 16px;
+    font-size: 18px;
   }
   p {
-    font-size: 14px;
+    font-size: 16px;
     padding: 5px 0;
   }
   body {
-    padding-top: 150px;
-
-   
+    padding-top: 150px;   
   }
   };
 `;
