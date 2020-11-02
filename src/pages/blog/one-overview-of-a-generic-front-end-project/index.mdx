@@ -1,0 +1,51 @@
+import BlogPost from "../../../components/blogPost";
+import {ListWrapper} from "../../../components/blogPost/blogPost.styles";
+
+export const meta = {
+    title: 'One overview of a generic front-end project',
+    description: "Let's define define the basic structure of a front-end project to start our discussion",
+    author: 'Albert Dias Moreira',
+    date: 'November 2, 2020',
+    tags: ['front-end', 'state management', 'architecture', 'development', 'project', 'guidelines']
+}
+
+export default BlogPost;
+
+Many posts about Front End will follow this one and they all will consider a project that follows the guidelines I'm going to describe below.
+ 
+I'm not saying that a front end project cannot follow different guidelines and be a good one, but I have learned a lot about front end development and know enough to affirm that this is a good way to do it.
+ 
+The most important thing I think any developer should keep in mind when coding and planning a project is to keep the code clean. A clean code means a maintainable and scalable project, that does not depend on one specific developer and can be understood well enough to make it worth to create new functionalities and fix found bugs.
+ 
+Clean Code is not the focus now, but it needs to be the base of whatever comes, and I'd like to make it very clear.
+ 
+First of all, let's define what is going to be considered a Front End project and its objectives and responsibilities. I know people have many different points of view about what exactly Front End means, but I'm going to tell how I see it.
+ 
+A Front End Project can be a Website, WebApp, MobileApp, or even a Desktop App. What all of them have in common is that they take data from an API to show it to the users and get input from the users to give it to the API.
+
+<ListWrapper
+>
+    <img src="/webApp.png" alt="Screens ans drafts for different kinds of apps" />
+</ListWrapper>
+
+
+Of course, that's not that simple, many layers need to be built to deliver the right experience to the user and to communicate in the right way to the API.
+
+It is very important to notice that Business Logics does not belong to the Front End
+
+That said, I consider a Front End to have 3 main layers, that can have their own layers themselves, or not, depending on the nature of the project.
+
+They are:
+
+- Backend interface - used to communicate to the backend. It requests data and sends user inputs. It is normally done using HTTP requests or web sockets.
+- State management - it deals with the data. The data is stored and its changes are directed to the other layers. State management stands in between, sending, and receiving data from both the User interface and Backend interface, telling the app what has been updated and keeping track of the state changes.
+- User interface - that is what the user sees and touches. This part is related to the views and components. How should a screen behave when the state change, how should a component show that an event happened.
+
+<ListWrapper
+>
+    <img src="/front-end-overview.png" alt="Diagram that shows Front end communicating with the cloud from Backend Interface and communicating to user using User Interface. State Management stays in the middle." />
+</ListWrapper>
+
+It is very important to highlight this division of the app functionalities because it is the first step to keep everything independent and modular.  From now, every subject discussed in this blog will consider this division when thinking about Front End development and there is a lot of more details to come in future posts.
+
+If you have more to add or to discuss, please feel free to contact me on the social networks and stay tuned for more front-end and IT posts and discussions.
